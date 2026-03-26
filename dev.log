@@ -8,3 +8,17 @@
  ✓ Starting...
  ✓ Ready in 17.9s
  ○ Compiling / ...
+ ✓ Compiled /api/convert in 45.8s (749 modules)
+ GET /api/convert 405 in 36129ms
+ GET / 200 in 47946ms
+ ○ Compiling /api/upload ...
+ ✓ Compiled /api/upload in 7.7s (465 modules)
+ POST /api/upload 200 in 8571ms
+[convert] action: compress ids: [ '0bb25ea2-aaa9-416e-bc85-829c108f001f' ]
+ POST /api/convert 200 in 258ms
+ ✓ Compiled in 1284ms (733 modules)
+ POST /api/upload 200 in 1410ms
+ POST /api/convert 200 in 1170ms
+ ○ Compiling /api/download/[id] ...
+ ✓ Compiled /api/download/[id] in 7s (467 modules)
+ GET /api/download/71aa7f4d-0487-4db9-8050-048d38f9be23 200 in 15916ms
