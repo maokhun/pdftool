@@ -28,7 +28,7 @@ export async function convertFiles(
   action: ConvertAction,
   files: StoredFile[],
   options: ConvertOptions = {}
-) {
+): Promise<StoredFile> {
   switch (action) {
     case "merge":
       return mergePdfs(files);
@@ -149,7 +149,7 @@ async function compressPdf(file: StoredFile) {
   });
 }
 
-async function pdfToTxt(file: StoredFile) {
+async function pdfToTxt(file: StoredFile): Promise<StoredFile> {
   throw new Error(
     "PDF to TXT is temporarily unavailable. Enable a text-extraction library to use this action."
   );
